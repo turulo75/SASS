@@ -81,23 +81,22 @@ ul{
     grid-template-columns: repeat(3,1fr);
     background-color: rgb(30, 32, 35);
     color:#d8d2cc;
+    &__col1{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    &__col2{
+        align-items: center;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    &__col3{
+        text-align: center;
+        margin-bottom: 10px;
+    }    
 }
 
-.superior__col1{
-    text-align: center;
-    margin-bottom: 10px;
-}
 
-.superior__col2{
-    align-items: center;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.superior__col3{
-    text-align: center;
-    margin-bottom: 10px;
-}
 
 /* CODIGO PRINCIPAL DE LA PAGINA */
 
@@ -108,42 +107,41 @@ hr{
 
 
 /* estilos de navegación */
-.nav__main{
-    display:grid;
-    font-size: 17px;
-    justify-content:flex-start; /* ubicacion del menu izquierda */
-    align-self: flex-end;
-    align-items:center;
-    height: 60px;
-    background-color:  #b7babc;
+.nav{
+    &__main{
+        display:grid;
+        font-size: 17px;
+        justify-content:flex-start; /* ubicacion del menu izquierda */
+        align-self: flex-end;
+        align-items:center;
+        height: 60px;
+        background-color:  #b7babc;
+    }
+    ul{
+        display: flex;
+    }
+    li{
+        padding: 10px;
+    }
+    a{
+        padding: 2px;
+    }
+    &:hover{
+        border-bottom: 2px solid #1a1e22;
+    }
+    &__brand{
+        width: 8vw;
+        align-items: center;
+        align-content:center;
+    }
+    img{
+        width:1vw;
+        align-items:center;
+        align-content: flex-start;
+    }
+
 }
 
-.nav__brand{
-    width: 8vw;
-    align-items: center;
-    align-content:center;
-}
-.nav__brand img{
-    width:1vw;
-    align-items:center;
-    align-content: flex-start;
-}
-
-.nav__main ul{
-    display: flex;
-}
-
-.nav__main ul li{
-    padding: 10px;
-}
-
-.nav__main ul li a{
-    padding: 2px;
-}
-
-.nav__main ul li a:hover{
-    border-bottom: 2px solid #1a1e22;
-}
 
 .nav__main ul.nav__menu{
     flex: 1;
@@ -173,13 +171,13 @@ hr{
     flex-direction: column;
     align-items: center;
     justify-content:flex-end;
+    p{
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        color: #fbf7f7;
+    }
 }
 
-.showcase p{
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-    color: #fbf7f7;
-}
 
 /* promocional citas*/
 .showcase2{
@@ -206,12 +204,10 @@ hr{
     font-size: 15px;
     border: 1px solid #251a3e;
     margin: 10px 0;
-    
-}
-
-.btn:hover{
-    background-color: #6f32ff;
-    opacity: .7;
+    &:hover{
+        background-color: #6f32ff;
+        opacity: .7;
+    }  
 }
 
 
@@ -222,74 +218,70 @@ hr{
     gap: 25px;
     margin: 10px 0;
     background-color: #d6d6d67d;
+    col{
+        display: inline;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    svg{
+        display: block;
+        margin: 0px auto;
+        width: 20%;
+        height: 100px;
+        text-align: center;
+    }
+    img{
+        width: 10vh;
+        text-align: center;
+    }
+    a{
+        display: inline-block;
+        padding: 10px 0;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    &:hover{
+        text-decoration: underline;
+        color: #fafcfb;
+    }
+    p{
+        font-size: 14px;
+        font-style: normal;
+        text-align: justify;
+        padding: 1rem;
+    }
+    
 }
 
-.cintados col{
-    display: inline;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
 
-.cintados svg{
-    display: block;
-    margin: 0px auto;
-    width: 20%;
-    height: 100px;
-    text-align: center;
-}
 
-.cintados img{
-    width: 10vh;
-    text-align: center;
-}
-
-.cintados a{
-    display: inline-block;
-    padding: 10px 0;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.cintados a:hover{
-    text-decoration: underline;
-    color: #fafcfb;
-}
-
-.cintados p{
-    font-size: 14px;
-    font-style: normal;
-    text-align: justify;
-    padding: 1rem;
-}
 
 /* Redes sociales */
 .redessoc{
     background-color: #d6d6d67d;
     padding: 2rem;
-
+    h2{
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
 }
 
-.redessoc h2{
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 20px;
-}
 
 .link{
     display: flex;
     align-items: center;
     justify-content: center;
+    a{
+        margin: 0 30px;
+    }
+    i{
+        font-size: 3rem; /*Tamaño iconos redes sociales*/
+    }
 }
 
-.link a{
-    margin: 0 30px;
-}
-
-.link a i{
-    font-size: 3rem; /*Tamaño iconos redes sociales*/
-}
 
 /* seccion footer */
 .footerlink{
