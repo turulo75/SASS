@@ -1,0 +1,796 @@
+/* ----------------------------------*/
+/* -----------   Index   ----------- */
+/* ----------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Nanum Gothic', sans-serif;
+    line-height: 20px;
+}
+
+body{
+    background-color: chartreuse;
+}
+
+p{
+    color: black;
+    font-style:normal;
+    font-size: 10px;
+    text-align: justify;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+span{
+   color: rgb(255, 255, 255);
+   text-align: justify;
+   font-weight: bold;
+}
+
+h1{
+    color: rgb(88, 44, 126);
+    text-align: center;      
+}
+ 
+h2{
+   color: rgb(88, 44, 126);
+   text-align: center;
+   
+   
+
+}
+
+div{
+    background-color:rgb(216, 219, 26);
+    width:100%;
+}
+
+ul{
+    list-style-type: none;
+    
+}
+li{
+    display: inline;
+    
+}
+
+ ul li{   
+    
+    text-align: right;
+    padding: 10px; 
+    margin: 20px;
+} 
+
+
+img{
+    width:100px;
+}
+
+button {
+    display:flexbox;
+    background-color: rgb(68, 168, 68);
+    text-align: center;   
+     width: 200px;
+     padding: 10px;
+     margin: 10px;
+    border: 2px solid yellow;
+}
+
+
+.superior{
+    width:100%;
+    /* background-color: rgb(212, 65, 65); */
+    font: 15px sans-serif;
+}
+
+.cinta{    
+    background-color: black;
+    text-align: left;
+     padding-top: 10px;
+     padding-bottom: 10px;
+}
+
+
+.cinta--cinta__col1{
+    width: 15px;
+    margin: 10%;
+}
+
+.cinta--cinta__col2{
+    width: 15ppx;
+    margin: 10%; 
+}
+
+.cinta--cinta__col3{
+    width: 15px;
+    margin: 10%;
+}
+
+.menuPrincipal{
+    background-color:bisque;
+    text-align: left;
+     padding-top: 5px;
+     padding-bottom: 5px;  
+
+}
+
+.menuPrincipal__logoclinica{
+    display: inline-block;
+    width: 200px;
+}
+
+
+
+
+.menuPrincipal__elementos{
+    display:inline-flexbox;
+    background-color: blueviolet;
+    padding: 15px;
+}
+
+.slider{
+    /* background-color: aqua; */
+    width:auto;
+    padding: 5px;
+}
+
+.slider img{
+    width:480px ;
+    display: inline;
+    margin: 10px;
+    
+}
+
+
+.cintados{
+    /* background-color: rgb(208, 99, 99); */
+    text-align: center;
+     padding-top: 10px;
+     padding-bottom: 10px;
+}
+
+.cintados section{
+    display:inline-block;
+    /* background-color: rgb(135, 99, 208); */
+    text-align: left;   
+     width: 360px;
+     padding: 10px;
+     margin: 10px;
+    border: 2px solid yellow;
+}
+
+.cintados section p{
+    display:block;
+    background-color: rgb(135, 99, 108);
+    text-align: justify;   
+    width: 350px;
+    border: 2px solid rgb(218, 19, 19);
+}
+
+
+.cintados__Instalaciones{
+    width: 800px;
+    margin: 10%;
+    border: 3px double seagreen;
+}
+
+cintados__Instalaciones span{
+    color: azure;
+    width: 20px;
+    margin: 10%;
+}
+
+cintados__Instalaciones p{
+    background-color: azure;
+}
+
+.cintados__Traslados{
+    width: 15px;
+    margin: 10%;
+}
+
+.cintados__servespeciales{
+    width: 15px;
+    margin: 10%;
+}
+
+.menuprincipal{
+    display: inline;
+    text-decoration: none;
+}
+
+
+
+
+
+main {
+    margin: 0px;
+    padding: 0px;
+    color: rgb(180, 94, 14);
+}
+
+
+
+
+.articulos{
+     background-color: rgb(208, 99, 99);
+     text-align: center;
+     padding-top: 10px;
+     padding-bottom: 10px;
+}
+
+.art1{
+    display:inline-block;
+    background-color: rgb(135, 99, 208);
+    text-align: left;   
+     width: 360px;
+     padding: 10px;
+     margin: 10px;
+    border: 2px solid yellow;
+}
+
+.art1 img{
+    display:inline-block;
+    background-color: rgb(135, 99, 208);
+    text-align: center;       
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid yellow;
+}
+.art1 span{
+    display:inline-block;
+    background-color: rgb(135, 99, 208);
+    text-align: center;   
+     width: 200px;
+     /* padding: 10px;
+     margin: 10px; */
+    border: 2px solid yellow;
+}
+
+.art1 p{
+    
+    background-color: rgb(135, 99, 208);
+    text-align:justify;
+    line-height: 20px;
+    /* border: 2px solid yellow; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.art2{
+    display:inline-block;
+    background-color: rgb(135, 99, 208);
+    text-align: left;   
+     width: 360px;
+     padding: 10px;
+     margin: 10px;
+    border: 2px solid yellow;
+}
+
+
+.art2 img{
+    display:inline-block;
+    background-color: rgb(135, 99, 208);
+    text-align: center;       
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid yellow;
+}
+.art2 span{
+    display:inline-block;
+    background-color: rgb(135, 99, 208);
+    text-align: center;   
+     width: 200px;
+     /* padding: 10px;
+     margin: 10px; */
+    border: 2px solid yellow;
+}
+
+.art2 p{
+    
+    background-color: rgb(135, 99, 208);
+    text-align:justify;
+    line-height: 20px;
+    /* border: 2px solid yellow; */
+}
+
+
+
+
+
+
+
+
+
+
+
+.art3{
+    display:inline-block;
+    background-color: rgb(135, 99, 208);
+    text-align: left;   
+     width: 360px;
+     padding: 10px;
+     margin: 10px;
+    border: 2px solid yellow;
+}
+.art3 img{
+    display:inline-block;
+    background-color: rgb(135, 99, 208);
+    text-align: center;       
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid yellow;
+}
+.art3 span{
+    display:inline-block;
+    background-color: rgb(135, 99, 208);
+    text-align: center;   
+     width: 200px;
+     /* padding: 10px;
+     margin: 10px; */
+    border: 2px solid yellow;
+}
+
+.art3 p{
+    
+    background-color: rgb(135, 99, 208);
+    text-align:justify;
+    line-height: 20px;
+    /* border: 2px solid yellow; */
+}
+
+ 
+
+
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+footer section{
+    display:inline;
+    width: auto;
+    height: auto;    
+    color: white;
+    margin: 8px;
+} 
+
+ .redesSoc{
+    display:inline-block;    
+}
+
+.redesSoc h2{
+    padding: 10px;
+    color:yellow;
+    text-align: center;
+}
+
+.redesSoc img{
+    display:inline;      
+    text-align: center;
+} 
+
+
+
+
+
+.enlacesInteres{  
+    display:inline-block;  
+}
+ 
+.enlacesInteres h2{    
+    color:yellow;
+    padding: 10px;
+    text-align: left;
+}
+
+.enlacesInteres p{
+    font-size: 12px;    
+}
+
+.enlacesInteres a{
+    display:inline;
+    text-decoration: none;
+    color: white;
+    line-height: 10px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+
+
+
+.noticiassalud{
+    display:inline-block;    
+}
+
+.noticiassalud h2{
+    color:yellow;
+    padding: 10px;
+    text-align: center;
+}
+
+.noticiassalud iframe{
+    width:"100";
+    height:"15";
+}
+
+.noticiassalud iframe{    
+    color: white;
+    text-align: center;
+}
+
+.noticiassalud p{
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+.ubicanos {
+    display:inline-block;
+    
+}
+
+.ubicanos h2{
+    padding: 10px;
+    color:yellow;
+    text-align: center;
+}
+
+.ubicanos p{
+    display: block;    
+    text-align: center;    
+    margin: 10px;
+    font-size: 10px;
+    color: white;
+}
+
+.Copyright {
+    display:inline-block;
+    color: white;
+} 
+.Copyright p{
+    display:inline-block;
+    color: white;
+} 
+
+/* ----------------------------------*/
+/* ----- Aviso de Privaciodad  ----- */
+/* ----------------------------------*/
+.avisoPrivacidad{
+width: fit-content;
+margin: 10px;
+padding: 10px;
+}
+
+.avisoPrivacidad p{
+    text-align: justify;
+    font-size: 12px;
+    font-style: normal;
+}
+
+/* ----------------------------------*/
+/* ----------- Conocenos ----------- */
+/* ----------------------------------*/
+.Contenedor{
+    width: 98vw;
+    padding: .5em;
+    background-color: aquamarine;
+}
+
+.Contenedor section{
+    display:inline-block;
+    
+} 
+.Contenedor__historia{
+    width:35%;
+    padding: 1em;
+    background-color: rgb(126, 50, 50);
+}
+
+.Contenedor__historia img{
+    width: 250px;
+}
+
+.Contenedor__historia p{
+    padding: 1em;
+    font-size: 0.9em;
+    color: white;
+}
+
+.Contenedor__principios{
+    width:58%;
+    padding: 1em;
+    background-color: rgb(126, 50, 50);
+}
+.Contenedor__principios span {
+    padding: 1em;
+    font-size: 1em;
+    color: rgb(88, 44, 126);
+    text-align: center;
+ }
+
+.Contenedor__principios h2{
+    text-align: left;
+    
+}
+.Contenedor__principios p{    
+     padding: 1em; 
+    font-size: 0.9em;
+    text-align: justify;
+    color: white;
+}
+
+.Contenedor__conocenosMas{
+    display:inline-block;
+    width:98%;
+    padding: 1em;
+    background-color: rgb(126, 50, 50);
+    margin: 2px;
+}
+
+.Videohistoria{
+    width: 25vw;
+}
+
+.Videohistoria iframe{
+    width: 25vw;
+}
+
+.Videohistoria p{    
+    padding: 1em; 
+   font-size: 0.9em;
+   text-align: justify;
+   color: white;
+}
+
+
+.Personalmedico{
+    width: 30vw;
+    padding: 10px;
+}
+
+.Personalmedico img{
+    width: 80px;
+}
+
+
+.Personalmedico p{    
+    padding: 1em; 
+   font-size: 0.9em;
+   text-align: justify;
+   color: white;
+}
+
+
+
+.personaladmvo{
+    width: 30vw;
+}
+
+.personaladmvo img{
+    width: 6em;
+}
+
+.personaladmvo p{    
+    padding: 1em; 
+   font-size: 0.9em;
+   text-align: justify;
+   color: white;
+}
+
+
+/* ----------------------------------*/
+/* ----------- Servicios ----------- */
+/* ----------------------------------*/
+
+.contenedorServicios{
+    width: 98vw;
+    padding: .5em;
+    background-color: aquamarine;
+}
+
+.cardhovercard{
+    display:flex;
+    width: 96vw;    
+}
+
+.tarjeta1{
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    background-color:chocolate;
+}
+
+.tarjeta1 img{
+    width: 6em;
+}
+
+.tarjeta1 span {
+        padding: 1em;
+        font-size: 1em;
+        color: rgb(88, 44, 126);
+        text-align: center;
+}
+
+.tarjeta1 p{    
+    padding: 1em; 
+   font-size: 0.9em;
+   text-align: justify;
+   color: white;
+}
+
+
+
+
+
+.tarjeta2{
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(135, 99, 108);
+}
+
+.tarjeta2 img{
+    width: 6em;
+}
+
+.tarjeta2 span {
+        padding: 1em;
+        font-size: 1em;
+        color: rgb(88, 44, 126);
+        text-align: center;
+}
+
+.tarjeta2 p{    
+    padding: 1em; 
+   font-size: 0.9em;
+   text-align: justify;
+   color: white;
+}
+
+
+
+.tarjeta3{
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(160, 17, 96);
+}
+
+.tarjeta3 img{
+    width: 6em;
+}
+
+.tarjeta3 span {
+        padding: 1em;
+        font-size: 1em;
+        color: rgb(88, 44, 126);
+        text-align: center;
+}
+
+.tarjeta3 p{    
+    padding: 1em; 
+   font-size: 0.9em;
+   text-align: justify;
+   color: white;
+}
+
+
+/* ----------------------------------*/
+/* -----------   Citas   ----------- */
+/* ----------------------------------*/
+.principal{
+    width: 98vw;
+    padding: .5em;
+    background-color: royalblue;
+}
+
+.principal p{
+    padding: 1em; 
+    font-size: 0.9em;
+    text-align: justify;
+    color: white;
+}
+
+.formcitas{
+    width: 60%;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(135, 99, 108);
+}
+
+.formcitas form{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.componenteForm{
+    display: block;
+}
+
+.componenteForm label{
+    display: block;
+}
+
+.componenteForm button{
+    display: block;
+}
+
+
+/* ----------------------------------*/
+/* --------   Contactanos   -------- */
+/* ----------------------------------*/
+
+.principal{
+    width: 98vw;
+    padding: .11em;
+    background-color: royalblue;
+}
+
+.formcontacto{
+    width: 40%;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(135, 99, 108);
+}
+
+.formcontacto form{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.formcontacto label{
+    display: block;
+    color: white;
+}
+
+.formcontacto button{
+    display: block;
+}
+
+.intro{
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(160, 17, 96);
+}
+
+.ubicanos{
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(160, 17, 96);
+}
+
+.mapa{
+    width: 850px;
+}
+
+.mapa img{
+    width: 350px;
+    text-align: right;
+}
