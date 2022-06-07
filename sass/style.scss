@@ -1,11 +1,13 @@
 /* ----------------------------------*/
-/* -----------   Index   ----------- */
+/* -----------   General   ----------- */
 /* ----------------------------------*/
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;        
-    line-height: 20px;    
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif; /*Fuente primaria*/
+    /* font-family: font-family: 'Lato', sans-serif;*/  /* fuente secundaria */ 
 }
 
 body{
@@ -14,35 +16,51 @@ body{
     background-image: url("data:image/svg+xml,%3Csvg width='84' height='48' viewBox='0 0 84 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h12v6H0V0zm28 8h12v6H28V8zm14-8h12v6H42V0zm14 0h12v6H56V0zm0 8h12v6H56V8zM42 8h12v6H42V8zm0 16h12v6H42v-6zm14-8h12v6H56v-6zm14 0h12v6H70v-6zm0-16h12v6H70V0zM28 32h12v6H28v-6zM14 16h12v6H14v-6zM0 24h12v6H0v-6zm0 8h12v6H0v-6zm14 0h12v6H14v-6zm14 8h12v6H28v-6zm-14 0h12v6H14v-6zm28 0h12v6H42v-6zm14-8h12v6H56v-6zm0-8h12v6H56v-6zm14 8h12v6H70v-6zm0 8h12v6H70v-6zM14 24h12v6H14v-6zm14-8h12v6H28v-6zM14 8h12v6H14V8zM0 8h12v6H0V8z' fill='%23555359' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
     /* font-family: 'Oswald', sans-serif; */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 16 px;
+    font-size: 10px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-h2{
+h1{
+    font-size: 28px;
     color: #ffcd42;
+    /* font-size: 1rem; */
+}
+
+h2{
+    font-size: 25px;
+    color: #ffcd42;
+    padding-top: 10px;
+    margin: 3px;
 }
 
 h3{
+    font-size: 23px;
     color: #ffcd42;
+    padding-top: 10px;
+    margin: 3px
 }
 
 h4{
+    font-size: 21px;
     color: #ffcd42;
 }
 
 h5{
- color: #ffcd42;
+    font-size: 19px;
+    color: #ffcd42;
 }
 
 h6{
+    font-size: 17px;
     color: #ffcd42;
 }
 
 p{
     text-align: justify;
     color: #fbf7f7;
+    padding-top: 15px;
 }
 
 svg{
@@ -52,6 +70,7 @@ svg{
 img{    
     width: 200px;
     text-align: center;
+    padding: 10px;
 }
 
 span a{
@@ -59,7 +78,7 @@ span a{
 }
 
 a{
-    color:#000000;
+    color:#0f0e0f;
     text-decoration: none;
 }
 
@@ -69,6 +88,14 @@ ul{
     text-decoration: none;
 }
 
+col iframe{
+    width: auto;
+    right: auto;
+}
+
+/* ----------------------------------*/
+/* -----------   Index   ----------- */
+/* ----------------------------------*/
 /* Cinta de contacto */
 .superior{
     display: grid;
@@ -96,21 +123,18 @@ ul{
     }    
 }
 
-
-
-/* CODIGO PRINCIPAL DE LA PAGINA */
+/* Linea separación */
 
 hr{
-    border: 2px solid #48d959;
+    border: 2px solid #ffcd42;
     margin: 2px 0;  
 }
 
-
-/* estilos de navegación */
+/* menu de navegación */
 .nav{
     &__main{
         display:grid;
-        font-size: 17px;
+        /* font-size: 2px; */
         justify-content:flex-start; /* ubicacion del menu izquierda */
         align-self: flex-end;
         align-items:center;
@@ -125,6 +149,7 @@ hr{
     }
     a{
         padding: 2px;
+        /* font-size: 4px; */
     }
     &:hover{
         border-bottom: 2px solid #1a1e22;
@@ -139,16 +164,15 @@ hr{
         align-items:center;
         align-content: flex-start;
     }
-
 }
 
 
-.nav__main ul.nav__menu{
+.nav__main ul .nav__menu{
     flex: 1;
     align-self:center;
     align-items: center;
 }
-
+ /*Boton para version Cel*/
 .menubtn{
     display: none;
     position: absolute;
@@ -160,29 +184,30 @@ hr{
 }
 
 
-/* promocional especialidades*/
+/* promocional: especialidades*/
 .showcase{
+    display:contents;
     width: auto;
     height: 350px;
     background: url('../recursos/Especialidades.jpg') no-repeat center center/cover;
     padding: 7vh;
-    margin-bottom:3px;
+    margin-bottom: 1px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:flex-end;
     p{
         margin-bottom: 10px;
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: #fbf7f7;
     }
 }
 
 
-/* promocional citas*/
+/* promocional: citas*/
 .showcase2{
-    width: 84.1vw;
-    height: 300px;
+    width: auto;
+    height: 350px;
     background: url('../recursos/calendario_medico.jpg') no-repeat center center/cover;
     padding: 7vh;
     margin-bottom:3px;
@@ -196,16 +221,20 @@ hr{
 .btn{
     cursor: pointer;
     display: inline-block;
+    width: 150px;
     border: 0;
     font-weight: bold;
     padding: 10px 20px;
     background-color: #251a3e;
     color: white;
-    font-size: 15px;
+    font-size: 13px;
     border: 1px solid #251a3e;
-    margin: 10px 0;
+    margin: 3px 0;
+    a{
+        color: #b7babc;
+    }
     &:hover{
-        background-color: #6f32ff;
+        background-color: #ffcd42;
         opacity: .7;
     }  
 }
@@ -215,14 +244,17 @@ hr{
 .cintados{
     display: flex;
     grid-template-columns: repeat(1fr);
-    gap: 25px;
-    margin: 10px 0;
-    background-color: #d6d6d67d;
+    gap: 2px;
+    margin: 2px 0;/*Linea de separación entre cada cinta*/
+    background-color: #d6d6d67d; /*color de la cinta*/
+  
     col{
         display: inline;
         text-align: center;
         align-items: center;
         justify-content: center;
+        margin: 0;
+        color:#fff;
     }
     svg{
         display: block;
@@ -231,31 +263,24 @@ hr{
         height: 100px;
         text-align: center;
     }
-    img{
-        width: 10vh;
-        text-align: center;
-    }
+    
     a{
         display: inline-block;
         padding: 10px 0;
-        text-transform: uppercase;
+        /* text-transform: uppercase; */
         font-size: 12px;
         font-weight: bold;
+        color: #fbf7f7;
     }
-    &:hover{
-        text-decoration: underline;
-        color: #fafcfb;
-    }
+ 
     p{
         font-size: 14px;
         font-style: normal;
         text-align: justify;
-        padding: 1rem;
-    }
-    
+        padding: .4rem;
+        color: #fbf7f7;
+    } 
 }
-
-
 
 
 /* Redes sociales */
@@ -267,18 +292,16 @@ hr{
         font-size: 20px;
         margin-bottom: 20px;
     }
-}
-
-
-.link{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    a{
-        margin: 0 30px;
-    }
-    i{
-        font-size: 3rem; /*Tamaño iconos redes sociales*/
+    .link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            margin: 0 30px; /*Separación entre iconos*/
+        }
+        i{
+            font-size: 3rem; /*Tamaño iconos redes sociales*/
+        }
     }
 }
 
@@ -289,32 +312,32 @@ hr{
     background-color: rgb(34, 48, 48);
     color: beige;
     font-size: 12px;
-    padding: 35px;
+    padding: 5px;
+    
 }
 
+
 .col ul li{
-    line-height: 3.3;  
+    line-height: 2;
 }
 .col a{
     font-size: 14px;
     color: rgb(255, 255, 255);
-}
-
-.col ul li a:hover{
-    font-size: 18px;
-    text-decoration: underline;
-    color: rgb(50, 184, 205);
-}
-
-.col iframe{
-    width: 350px;
-    width: 28vmax;
-    height: 35vh;
-}
-
-.col p{
-    font-size: 14px;
-    color: rgb(255, 255, 255);
+    .col ul li a:hover{
+        font-size: 18px;
+        text-decoration: underline;
+        color: rgb(50, 184, 205);
+    }
+    .col iframe{
+        width: 350px;
+        /* width: 28vmax; */
+        height: 35vh;
+    }
+    
+    .col p{
+        font-size: 14px;
+        color: rgb(255, 255, 255);
+    }
 }
 
 .copyright{
@@ -332,13 +355,176 @@ hr{
 /* ----------------------------------*/
 /* ---------  Conocenos   ---------- */
 /* ----------------------------------*/
-
+/* sección de cintas */
 .cintados{
-    text-align:center;
+    display: flex;
+    grid-template-columns: repeat(1fr);
+    gap: 2px;
+    margin: 2px 0;/*Linea de separación entre cada cinta*/
+    background-color: #d6d6d67d; /*color de la cinta*/
+  
+    col{
+        display: inline;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 2px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    img{
+        display: block;
+        margin: 0px auto;
+        width: 100%;
+        text-align: center;
+    }
+
 }
-.cintados h3{
-    text-align:left; /*Alineacion de titulos*/
+
+
+/* ----------------------------------*/
+/* ---------  Servicios   ---------- */
+/* ----------------------------------*/
+.container{
+    font-size: 25px;
+    color: #ffcd42;
 }
+.container h2{
+    font-size: 25px;
+    color: #ffcd42;
+}
+
+.container h3{
+    font-size: 23px;
+    color: #ffcd42;
+}
+
+
+
+
+
+
+
+/* background-color: #d6d6d67d; */ /*color de la cinta*/
+
+
+
+
+/* ----------------------------------*/
+/* --------  Contactanos   --------- */
+/* ----------------------------------*/
+.form{
+    background-color:#fff;
+    margin: auto;
+    width: 90%;
+    max-width: 900px;
+    padding: 1.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0, 0, 0 /30%);
+    &___title{
+        font-size: 2rem;
+        margin-bottom: .5em;
+    }
+
+    /* contenedor de los inputs */
+    &__container{
+        margin-top: 1em;
+        display: grid;
+        gap: 1.2em; /*separacion entre elementos*/
+    }
+
+    /* contenedor directo de los inputs */
+    &__group{
+        position: relative;
+        --color: #5757577e; /* variable */
+    }
+    
+    /* elementos inputs del formulario */
+    &__input{
+        width: 100%;
+        background: none;
+        color: #706c6c;
+        font-size: 1rem; /*Tamaño de letra*/
+        padding: .6em .3em;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid var(--color);
+        font-family: 'Roboto' sans-serif;
+    }
+    &:not(:placeholder-shown){
+        color: #4d4646;
+    }
+
+    /* texto de las cajas de texto */
+    &__label{
+        color: var(--color);
+        cursor: pointer; /*Efecto al pasar el cursor sobre el elemento*/
+        position: absolute;
+        top: 0;
+        left: 9px;
+        transform: translateY(8px); /*Posicionamos los textos sobre las lineas*/
+        transition: transform .5s, color .3s;
+    }
+    
+    /* boton del formulario */
+    &__submit{
+        background: #3866f2;
+        color: #fff;
+        font-family: 'Roboto' sans-serif;
+        font-weight: 300;
+        font-size: 1rem;
+        padding: 2em 0;
+        margin: 2em 1em;
+        border: none;
+        border-radius: .5em;
+    }
+    
+    &__line{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #3866f2;
+        transform: scale(0);
+        transform: left bottom;
+        transition:  transform .4s;
+    }
+
+
+}
+
+
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) + .form__label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #3886f2;
+}
+
+
+.form__input:focus ~ .form__line,
+.form__input:not(:placeholder-shown) ~ .form__line{
+    transform: scale(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ----------------------------------*/
@@ -372,9 +558,7 @@ table tr td textarea{
 /* ----------------------------------*/
 
 @media screen and (max-width: 768px) {
-    body{
-        background-color: red;
-    }
+  
 
     .superior{
         display: grid;
@@ -544,24 +728,8 @@ table tr td textarea{
 /* ----------------------------------*/
 /* ------ Formulario de Citas------- */
 /* ----------------------------------*/
-
-table tr td{
-    padding-right: 5px;
-}
-
-table tr td label{
-    align-items: center;
-}
-
-table tr td input{
-    width: 100%;
-    border-radius: 3px;
-    height: 1.9rem;
-}
-
-table tr td textarea{
-    margin-top: 0.2rem;
-    width: 100%;
+.form___title{
+    font-size: 1.8rem;
 }
 
 }
@@ -574,19 +742,58 @@ table tr td textarea{
 
 
 @media screen and (max-width: 360px) {
-    body{
-        background-color: rgb(30, 211, 27);
-    }
+   
     .superior{
         display: grid;
         width: 100%;
-        height: 30px;
+        height: 50px;
         margin: auto;
         font-size: .5em;
         grid-template-columns: repeat(3,1fr);
         background-color: rgb(54, 54, 54);
         color:#ffffff;
+    
+     .menubtn button span{
+        color: #ffcd42;
     }
+}
+    
+    /* estilos de navegación */
+    .nav{
+    &__main{
+        display:grid;
+        font-size: 17px;
+        justify-content:flex-start; /* ubicacion del menu izquierda */
+        align-self: flex-end;
+        align-items:center;
+        height: 60px;
+        background-color:  #b7babc;
+    }
+    ul{
+        display: flex;
+    }
+    li{
+        padding: 10px;
+    }
+    a{
+        padding: 2px;
+    }
+    &:hover{
+        border-bottom: 2px solid #1a1e22;
+    }
+    &__brand{
+        width: 18vw;
+        align-items: center;
+        align-content:center;
+    }
+    img{
+        width:1vw;
+        align-items:center;
+        align-content: flex-start;
+    }
+}
+
+    
     /* muestra el menu */
     .nav__main ul.nav__menu{
         display: block;
@@ -612,9 +819,7 @@ table tr td textarea{
         font-size: 14px;
     }
 
-    .superior .menubtn button span{
-        color: #ffcd42;
-    }
+    
 
 
     /* promocional especialidades*/
@@ -634,6 +839,9 @@ table tr td textarea{
         margin-bottom: 10px;
         font-size: .82rem;
         color: #fbf7f7;
+        h1{
+            font-size: 10px;
+        }
     }
     
     /* promocional citas*/
@@ -740,28 +948,19 @@ table tr td textarea{
         text-align: center;
     }
 
-
-    table tr td{
-        padding-right: 5px;
-    }
-    
-    table tr td label{
-        align-items: center;
-    }
-    
-    table tr td input{
-        width: 80%;
-        border-radius: 3px;
-        height: 1.9rem;
-    }
-    
-    table tr td textarea{
-        margin-top: 0.2rem;
-        width: 80%;
+    .form___title{
+        font-size: 1.8rem;
     }
 
-    table tr td select{
-        width: 80%;
-    }
+
+
+    
+/* ----------------------------------*/
+/* --------  Contactanos   --------- */
+/* ----------------------------------*/
+
+
+
+
 }
 

@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>Clinica Ortiz | Contactanos</title>
+        <title>Contactanos | Clinica Ortiz</title>
         <link rel="icon" href="/recursos/Logoclinicaortiz.svg">
     
         <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -111,9 +111,6 @@
                             <p>contacto@Clinicaortiz.com.mx</p>
                         </ul>                        
                     </div>
-                </div>
-
-                <div class="row">
                     <!-- mapa de ubicacion -->
                     <div class="col">
                         <h2>Mapa de Ubicación</h2>
@@ -124,56 +121,37 @@
                             </li>
                         </ul>
                     </div>
-                    
+                </div>
+                <div class="row"></div>
                     <!-- formulario de contacto -->
                     <div class="col">        
-                        <section class="formcitas">
-                        <h2>Formulario de Citas</h2>
-                        <hr>
-                        <form action="get" class="componenteForm">
-                            <table>
-                                <tr>
-                                    <td><p><label for="">Nombre Completo</label></p></td>
-                                    <td><input placeholder="Nombre completo" /></td>
-                                </tr>
-                                <tr>
-                                    <td><p><label for="">Email</label></p></td>
-                                    <td><input type="email" /></td>
-                                </tr>
-                                <tr>
-                                    <td><p><label for="">Telefono</label></p></td>
-                                    <td><input type="tel" /></td>
-                                </tr>
-                                <tr>
-                                    <td><p><label for="">Fecha de la Cita</label></p></td>
-                                    <td><input type="datetime-local" /></td>
-                                </tr>
-                                <tr>
-                                    <td><p><label for="">Edad</label></p></td>
-                                    <td><input type="number" /></td>
-                                </tr>
-                                <tr>
-                                    <td><p><label for="">Especialidad</label></p></td>
-                                    <td> <select >
-                                            <option selected>Selecciona una especialidad</option>
-                                            <option value="1">Pediatria</option>
-                                            <option value="2">Urgencias</option>
-                                            <option value="3">traumatologia</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><p><label for="">Mensaje</label></p></td>
-                                    <td><textarea name="textarea" rows="10" cols="40" placeholder="Mensaje"></textarea></td>
-                                </tr>
-                                
-                                <tr>
-                                    <td></td>
-                                    <td>
-                                        <button class="btn btn-success">Enviar Cita</button>
-                                    </td>   
-                                </tr>
-                            </table>
+                        <h1>Formulario de Citas</h1>  
+                            <hr>
+                        <form class="form">
+                            
+                            <div class="form__container">
+                                <div class="form__group">
+                                    <input type="text" id="nombre" class="form__input" placeholder=" "/>
+                                    <label for="nombre" class="form__label"> Nombre Completo: </label>
+                                    <span class="form__line"></span>
+                                </div>                                
+                                <div class="form__group">
+                                    <input type="email" id="email" class="form__input" placeholder=" "/>
+                                    <label for="email" class="form__label"> Email: </label>
+                                    <span class="form__line"></span>
+                                </div>
+                                <div class="form__group">
+                                    <input type="tel" id="tel" class="form__input" placeholder=" "/>
+                                    <label for="tel" class="form__label"> Telefono: </label>
+                                    <span class="form__line"></span>
+                                </div>
+                                <div class="form__group">
+                                    <input type="text" id="mensaje" class="form__input" rows="10" cols="40" placeholder=" "/>
+                                    <label for="mensaje" class="form__label"> Mensaje: </label>
+                                    <span class="form__line"></span>
+                                </div>
+                                <input type="submit" class="form__submit" value="Enviar">
+                            </div>
                         </form>
                     </div>
                 </div>
